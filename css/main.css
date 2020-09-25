@@ -1,0 +1,64 @@
+body, html {
+  font-size: 14px;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#page {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+#content {
+  flex: 1 1 auto;
+  height: 100%;
+  user-select: none;
+  width: 100%;
+}
+
+#header {
+  background: gray;
+  color: white;
+  flex: 0 0 auto;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 2px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#header > a {
+  color: white;
+  text-decoration: none;
+}
+
+#header > span {
+  cursor: pointer;
+}
+
+#ar-quiver {
+  margin: auto;
+  padding: 10px;
+}
+
+#ar-quiver svg {
+  border: 2px solid lightgray;
+}
+
+.ui-button {
+  font-family: sans-serif;
+}
+
+.ui-tooltip {
+  max-width: 100%;
+}
+
+.ui-widget-content {
+  background-color: #fdfdfd;
+  font-family: sans-serif;
+  text-align: center;
+}

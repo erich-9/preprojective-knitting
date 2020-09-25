@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Preprojective Knitting</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Applet for knitting preprojective components.">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+
+  <body>
+    <div id="page">
+      <div id="header">
+        <span id="export-as-latex">LaTeX</span> | <span id="export-as-pdf">PDF</span> &mdash; <a id="link" href=""></a>
+      </div>
+
+      <div id="content">
+        <div id="ar-quiver" class="module-quiver"></div>
+      </div>
+    </div>
+
+    <div id="error-dialog">
+      <p id="error-message"></p>
+    </div>
+
+    <script src="vendors.bundle.js"></script>
+    <script src="main.bundle.js"></script>
+  </body>
+
+</html>

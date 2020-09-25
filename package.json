@@ -1,0 +1,36 @@
+{
+  "name": "preprojective-knitting",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "d3": "^6.1.1",
+    "file-saver": "^2.0.2",
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "eslint": "^7.8.1",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.1.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "npm run copy-lib && ./node_modules/webpack/bin/webpack.js",
+    "debug": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base ./",
+    "test": "mocha --watch",
+    "copy-lib": "mkdir -p dist && rsync -a lib/ dist/lib/"
+  },
+  "keywords": [],
+  "author": "Jan Geuenich",
+  "license": "ISC",
+  "description": "Applet for knitting preprojective components"
+}

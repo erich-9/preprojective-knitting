@@ -1,0 +1,83 @@
+svg.quiver-view {
+  overflow: hidden;
+  user-select: none;
+}
+
+svg.quiver-view .vertices {
+  cursor: pointer;
+}
+
+svg.quiver-view .vertices circle {
+  fill: none;
+  pointer-events: all;
+  stroke: #333;
+  stroke-width: 1.3px;
+}
+
+svg.quiver-view .vertices text {
+  fill: #333;
+  font: bold 12px sans-serif;
+  text-anchor: middle;
+}
+
+svg.quiver-view .arrows path {
+  fill: none;
+  stroke: #333;
+  stroke-width: 1.3px;
+}
+
+svg.quiver-view .arrow-tip {
+  fill: #333;
+  stroke: #333;
+  stroke-width: 1.3px;
+}
+
+svg.quiver-view .arrows text {
+  fill: #333;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+svg.quiver-view .arrows .trans path {
+  stroke: #aaa;
+  stroke-dasharray: 5,5;
+}
+
+svg.quiver-view .arrow-tip-trans {
+  fill: #aaa;
+  stroke: #aaa;
+}
+
+
+.module-quiver svg.quiver-view .arrows path {
+  stroke: #aaa;
+}
+
+.module-quiver svg.quiver-view .arrow-tip {
+  fill: #aaa;
+  stroke: #aaa;
+}
+
+.module-quiver svg.quiver-view .vertices circle {
+  fill: #aaa;
+  fill-opacity: 0.08;
+  stroke: #aaa;
+}
+
+.module-quiver svg.quiver-view .vertices .projective circle {
+  fill: #a66;
+  fill-opacity: 0.08;
+  stroke: #a66;
+}
+
+.module-quiver svg.quiver-view .vertices .injective circle {
+  fill: #6a6;
+  fill-opacity: 0.08;
+  stroke: #6a6;
+}
+
+.module-quiver svg.quiver-view .vertices .projective.injective circle {
+  fill: #66a;
+  fill-opacity: 0.08;
+  stroke: #66a;
+}
